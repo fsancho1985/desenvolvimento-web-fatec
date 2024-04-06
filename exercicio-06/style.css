@@ -4,6 +4,7 @@ body {
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #ccc;
+    height: 100vh;
 }
 
 #container {
@@ -50,6 +51,19 @@ body {
     border-right: none;
     padding: 10px;
 }
+
+#breadcrumbs a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+#breadcrumbs::after {
+    content: " > ";
+} 
+
+
 
 .main_content {
     display: flex;
@@ -104,4 +118,23 @@ footer span {
 
 footer span a {
     text-decoration: none;
+}
+
+.container-discography {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-album {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000;
+    margin: 10px;
+    padding: 15px;
+}
+
+.album-img img {
+    width: 300px;
+    height: 300px;
 }
