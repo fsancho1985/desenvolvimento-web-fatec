@@ -3,6 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ccc;
 }
 
 #container {
@@ -48,4 +49,59 @@ body {
     border-left: none;
     border-right: none;
     padding: 10px;
+}
+
+.main_content {
+    display: flex;
+    border: 1px solid #000;
+}
+
+aside {
+    border-right: 1px solid #000;
+}
+
+.aside-content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+}
+
+.aside-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+}
+
+.content h1 {
+    font-size: 1.8em;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.content p {
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+
+footer {
+    padding: 10px;
+}
+
+footer span {
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+footer span a {
+    text-decoration: none;
 }
