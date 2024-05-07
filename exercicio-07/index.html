@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+        defer></script>
+    <script src="./js/script.js" defer></script>
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <main class="container-fluid mt-2">
+        <div class="container-sm border mb-3">
+            <h1 class="m-4">Tip calculator</h1>
+            <form>
+                <div class="mb-3">
+                    <label for="valor" class="form-label">Valor da conta:</label>
+                    <input type="number" id="valor" name="valor" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="tip" name="tip" class="form-label">Porcentagem da gorgeta:</label>
+                    <input type="number" id="tip" name="tip" class="form-control">
+                </div>
+                <div class="result"></div>
+                <button class="btn-primary btn-lg m-3" type="button" id="btn-calcula" onclick="calculaTip(event)">Calcular</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
